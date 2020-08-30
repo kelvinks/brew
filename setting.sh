@@ -1,6 +1,6 @@
 #!/bin/sh
-## taking.kr (webmaster@taking.kr)
-## 2018-10-14
+## kelvink.ga (kji9623@gmail.com)
+## 2020-08-21
 
 cat <<EOT > /etc/resolv.conf
 # Google DNS
@@ -22,7 +22,7 @@ brew tap homebrew/bundle
 echo 'Homebrew Installed OK!'
 
 echo 'Brewfile Package Installing..'
-cd $HOME/Downloads/ && wget BrewFile https://gist.githubusercontent.com/taking/9d24f1dec98b779eac44ceab24f6b5d2/raw/5a14ba522a654427a83df5b65c2722c092b399f0/Brewfile
+cd $HOME/Downloads/ && wget BrewFile https://raw.githubusercontent.com/kelvinks/brew/master/Brewfile
 brew bundle Brewfile
 echo 'Brewfile Package Installed OK!'
 
@@ -40,6 +40,6 @@ git clone https://github.com/djui/alias-tips.git ${ZSH_CUSTOM:-~/.oh-my-zsh/cust
 echo 'zsh Installed OK!'
 
 cd $HOME && mv .zshrc .zshrc_backup
-wget https://gist.githubusercontent.com/taking/1a03b19d580dda6376300d865b19b443/raw/db6dfe56088d8f12810da874b6f6d68108671275/.zshrc
+wget https://raw.githubusercontent.com/kelvinks/brew/master/.zshrc
 echo 'oh-my-zsh Installed OK!'
 source ~/.zshrc
