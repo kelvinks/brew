@@ -1,14 +1,16 @@
+# zshrc copy error fix
+ZSH_DISABLE_COMPFIX="true"
+
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/kji96/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="agnoster"
 
 # Powerlevel9k Theme Setting
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -67,11 +69,6 @@ POWERLEVEL9K_VIRTUALENV_FOREGROUND='black'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator context virtualenv rbenv rvm dir_writable dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs command_execution_time ram battery ip time)
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -84,8 +81,6 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs command_execution_tim
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
-
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
 
@@ -133,7 +128,7 @@ plugins=(
 	tmux
 	tmuxinator
 	virtualenv
-  alias-tips
+	alias-tips
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -149,6 +144,7 @@ alias vim="nvim"
 alias vi="nvim"
 alias vimdiff="nvim -d"
 export EDITOR=/usr/local/bin/nvim
+
 # NeoVim local error correction
 export LC_ALL=ko_KR.UTF-8
 
@@ -168,8 +164,10 @@ export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 
 # flutter
-export PATH="/Users/kji96/flutter/bin:$PATH"
+export PATH="$HOME/flutter/bin:$PATH"
 
 # alias-tips
-export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Alias tip: "
+export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Alias tip : "
 
+# Java Path
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
