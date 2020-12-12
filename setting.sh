@@ -12,14 +12,12 @@ echo '>>> Homebrew Base Apps Installed OK!'
 
 cd $HOME
 wget Brewfile https://raw.githubusercontent.com/kelvinks/brew/master/Brewfile
-brew bundle
+brew bundle Brewfile
 echo '>>> Brewfile Package Installed OK!'
 
-cd $HOME
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 echo '>>> Oh-My-Zsh Installed OK!'
 
-cd $HOME
 git clone https://github.com/powerline/fonts.git
 ./fonts/install.sh
 echo '>>> Powerline Fonts Install OK!'
@@ -35,3 +33,6 @@ cd $HOME
 mv .zshrc .zshrc_backup
 wget https://raw.githubusercontent.com/kelvinks/brew/master/.zshrc
 echo '>>> Oh-My-Zsh Config OK!'
+
+cd $HOME
+curl -L https://raw.githubusercontent.com/kelvinks/brew/master/run_sudo.sh | sh
