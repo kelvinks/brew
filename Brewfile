@@ -8,19 +8,6 @@ tap "homebrew/bundle"
 # Application Path ####################################################################################
 cask_args appdir: "/Applications"
 
-# fonts ###############################################################################################
-cask 'homebrew/cask-fonts/font-d2coding'
-cask 'homebrew/cask-fonts/font-hack'
-cask 'homebrew/cask-fonts/font-meslo-lg'
-cask 'homebrew/cask-fonts/font-meslo-for-powerline'
-cask 'homebrew/cask-fonts/font-nanum-gothic'
-cask 'homebrew/cask-fonts/font-nanum-gothic-coding'
-cask "font-fira-code-nerd-font"
-cask "font-fira-mono-nerd-font"
-cask "font-iosevka-nerd-font"
-cask "font-noto-nerd-font"
-cask "font-powerline-symbols"
-
 # Binaries/Libraries ##################################################################################
 # system
 brew "heroku/brew/heroku"
@@ -89,3 +76,18 @@ cask "google-chrome"
 # Markdown ############################################################################################
 cask "boostnote"                                      # 마크다운 노트
 cask "simplenote"                                     # 노트 동기화(Win,Mac,Linux,Mobile)
+
+# fonts ###############################################################################################
+cask "font-d2coding"
+cask "font-hack-nerd-font"
+cask "font-meslo-lg-nerd-font"
+cask "font-meslo-for-powerline"
+cask "font-nanum-gothic"
+cask "font-nanum-gothic-coding"
+cask "font-fira-code-nerd-font"
+cask "font-fira-mono-nerd-font"
+cask "font-iosevka-nerd-font"
+cask "font-noto-nerd-font"
+cask "font-roboto-mono-nerd"
+cask "font-ubuntu-nerd-font"
+cask "font-powerline-symbols"
