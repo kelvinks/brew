@@ -24,6 +24,7 @@ brew "tmux"
 cask "iterm2"
 brew "mackup"                                         # MacBackup
 cask "karabiner-elements"
+brew "svn"
 # Zsh
 brew "zsh"
 brew "zsh-completions"
@@ -42,10 +43,10 @@ cask "mounty"
 
 # Language ############################################################################################
 brew "python"
-brew "node", args: ["without-npm"] 	                  # non-install npm
-brew "ruby"
+brew "node" 	                                        # non-install npm
+brew "ruby"                                           # Ruby
 brew "jq"                                             # json
-cask "java"                                           # 자바, 로그인 요구
+brew "java"                                           # 자바, 로그인 요구
 cask "miniconda"                                      # 가상 설정, 로그인 요구
 
 # Utils ###############################################################################################
@@ -63,7 +64,7 @@ cask "db-browser-for-sqlite"
 
 # IDE #################################################################################################
 cask "pycharm-ce"
-cask "visual-studio-code"
+brew "visual-studio-code"
 cask "intellij-idea"
 
 # Multimedia ##########################################################################################
