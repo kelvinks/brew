@@ -33,5 +33,3 @@ cd $HOME
 mv .zshrc .zshrc_backup
 wget https://raw.githubusercontent.com/kelvinks/brew/master/.zshrc
 echo '>>> Oh-My-Zsh Config OK!'
-
-source ~/.zshrc
