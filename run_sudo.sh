@@ -18,4 +18,4 @@ sudo cat <<EOT > /etc/shells
 EOT
 echo '>>> /usr/local/bin/zsh Added OK!'
 
-sudo chsh -s `which zsh`
+chsh -s `which zsh`
