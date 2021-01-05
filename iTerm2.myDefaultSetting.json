@@ -323,11 +323,11 @@
   "Open Toolbelt" : false,
   "Shortcut" : "",
   "Cursor Color" : {
-    "Red Component" : 0.1615310247348134,
+    "Red Component" : 0,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.49858233297498838,
+    "Blue Component" : 1,
     "Alpha Component" : 1,
-    "Green Component" : 0.89260005950927734
+    "Green Component" : 0.67117117117117164
   },
   "Ansi 0 Color" : {
     "Green Component" : 0.12343578040599823,
