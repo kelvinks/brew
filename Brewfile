@@ -12,8 +12,8 @@ cask_args appdir: "/Applications"
 # system
 brew "heroku/brew/heroku"
 brew "mas"                                            # Mac App Store install support
-brew "coreutils"			                                # Install GNU Core Utilities
-brew "yarn"				                                    # npm replacement yarn
+brew "coreutils"			                          # Install GNU Core Utilities
+brew "yarn"				                              # npm replacement yarn
 brew "tree"
 brew "openssl@1.1"
 brew "neofetch"
@@ -43,17 +43,17 @@ cask "mounty"
 
 # Language ############################################################################################
 brew "python"
-brew "node" 	                                        # non-install npm
+brew "node" 	                                      # non-install npm
 brew "ruby"                                           # Ruby
 brew "jq"                                             # json
 brew "java"                                           # 자바, 로그인 요구
 cask "miniconda"                                      # 가상 설정, 로그인 요구
 
 # Utils ###############################################################################################
-brew "neovim"				                                  # NeoVim
+brew "neovim"				                          # NeoVim
 brew "youtube-dl"                                     # Youtube Download Cli
 brew "x264"
-brew "asciinema"			                                # Terminal Record
+brew "asciinema"			                          # Terminal Record
 brew "micro"
 cask "itsycal"                                        # Calindar               
 cask "bitwarden"                                      # 비밀번호 관리
